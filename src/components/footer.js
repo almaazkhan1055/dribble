@@ -7,7 +7,7 @@ import { FaPinterest } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center justify-around mt-12 mb-24 px-4 md:px-0">
+      <div className="flex flex-col md:flex-row items-center justify-around mt-12 mb-24 px-4 md:px-0 text-black">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
