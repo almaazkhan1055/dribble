@@ -7,7 +7,7 @@ import { FaPinterest } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <div className="flex items-center justify-around mt-[50px] mb-[100px]">
+      <div className="flex flex-col md:flex-row items-center justify-around mt-12 mb-24 px-4 md:px-0">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -25,37 +25,37 @@ const Footer = () => {
             ></path>
           </svg>
         </div>
-        <div className="flex gap-[30px] font-semibold">
-          <a>For designers</a>
-          <a>Hire talent</a>
-          <a>Inspiration</a>
-          <a>Advertising</a>
-          <a>Blog</a>
-          <a>About</a>
-          <a>Careers</a>
-          <a>Support</a>
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 font-semibold text-center md:text-left">
+          <a href="#designers">For designers</a>
+          <a href="#talent">Hire talent</a>
+          <a href="#inspiration">Inspiration</a>
+          <a href="#advertising">Advertising</a>
+          <a href="#blog">Blog</a>
+          <a href="#about">About</a>
+          <a href="#careers">Careers</a>
+          <a href="#support">Support</a>
         </div>
-        <div className="flex gap-[10px]">
+        <div className="flex gap-4 mt-4 md:mt-0">
           <FaTwitter />
           <RiFacebookBoxFill />
           <FaInstagram />
           <FaPinterest />
         </div>
       </div>
-      <div className="flex items-center justify-between px-[65px] mb-[50px]">
-        <div className="flex gap-[20px] text-[#BDBDBD]">
+      <div className="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 mb-12">
+        <div className="flex flex-wrap gap-4 text-gray-400 text-center md:text-left">
           <span>&copy; 2024 Dribbble</span>
-          <span>Terms</span>
-          <span>Privacy</span>
-          <span>Cookies</span>
+          <a href="#terms">Terms</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#cookies">Cookies</a>
         </div>
-        <div className="flex gap-[20px] text-[#BDBDBD]">
-          <span>Jobs</span>
-          <span>Designers</span>
-          <span>Freelancers</span>
-          <span>Tags</span>
-          <span>Places</span>
-          <span>Resources</span>
+        <div className="flex flex-wrap gap-4 text-gray-400 text-center md:text-right mt-4 md:mt-0">
+          <a href="#jobs">Jobs</a>
+          <a href="#designers">Designers</a>
+          <a href="#freelancers">Freelancers</a>
+          <a href="#tags">Tags</a>
+          <a href="#places">Places</a>
+          <a href="#resources">Resources</a>
         </div>
       </div>
     </>

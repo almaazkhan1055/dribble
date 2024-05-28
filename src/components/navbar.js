@@ -4,9 +4,9 @@ import { CiSearch } from "react-icons/ci";
 const Navbar = () => {
   return (
     <>
-      <header class="text-gray-600 body-font mb-[100px]">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <header className="text-gray-600 body-font mb-24">
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="76"
@@ -22,25 +22,26 @@ const Navbar = () => {
                 fill="currentColor"
               ></path>
             </svg>
+            ;
           </a>
-          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center text-black font-semibold">
-            <a class="mr-5 hover:text-gray-900">Designers</a>
-            <a class="mr-5 hover:text-gray-900">Inspiration</a>
-            <a class="mr-5 hover:text-gray-900">Courses</a>
-            <a class="mr-5 hover:text-gray-900">Jobs</a>
-            <a class="mr-5 hover:text-gray-900">Go Pro</a>
+          <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center text-black font-semibold">
+            <a className="mr-5 hover:text-gray-900">Designers</a>
+            <a className="mr-5 hover:text-gray-900">Inspiration</a>
+            <a className="mr-5 hover:text-gray-900">Courses</a>
+            <a className="mr-5 hover:text-gray-900">Jobs</a>
+            <a className="mr-5 hover:text-gray-900">Go Pro</a>
           </nav>
-          <div className="relative flex gap-[40px]">
-            <div className="absolute top-[12px] right-[288px] w-[200px] flex items-center justify-center">
-              <CiSearch className="text-[32px] text-slate-700" />
-              <span>Search...</span>
+          <div className="relative flex gap-4 md:gap-10">
+            <div className="absolute top-3 left-3 md:static md:top-auto md:left-auto flex items-center justify-center">
+              <CiSearch className="text-2xl text-slate-700" />
+              <span className="hidden md:block ml-2">Search...</span>
             </div>
             <input
-              className=" p-4 md:p-4 lg:p-4 xl:p-4 2xl:p-4 rounded-full"
+              className="pl-10 pr-4 py-2 md:py-2 lg:py-2 xl:py-2 2xl:py-2 rounded-full border border-gray-300"
               type="text"
             />
             <button className="text-black font-medium">Log in</button>
-            <button className=" font-medium px-[30px] py-[0] text-[14px] leading-none bg-black rounded-[32px] text-white">
+            <button className="font-medium px-6 py-2 text-sm leading-none bg-black rounded-full text-white">
               Signup
             </button>
           </div>
