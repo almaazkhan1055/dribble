@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 
 const Navbar = () => {
@@ -22,17 +23,23 @@ const Navbar = () => {
                 fill="currentColor"
               ></path>
             </svg>
-            ;
           </a>
           <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center text-black font-semibold">
-            <a className="mr-5 hover:text-gray-900">Designers</a>
+            <a className="flex items-center  mr-5 hover:text-gray-900">
+              Find Designers <RiArrowDropDownLine className="text-2xl" />
+            </a>
             <a className="mr-5 hover:text-gray-900">Inspiration</a>
-            <a className="mr-5 hover:text-gray-900">Courses</a>
+            <a className=" flex items-center mr-5 hover:text-gray-900">
+              Courses <RiArrowDropDownLine className="text-2xl" />
+            </a>
             <a className="mr-5 hover:text-gray-900">Jobs</a>
             <a className="mr-5 hover:text-gray-900">Go Pro</a>
           </nav>
           <div className="relative flex gap-4 md:gap-10">
-            <div className="absolute top-3 left-3 md:static md:top-auto md:left-auto flex items-center justify-center">
+            <div
+              className="absolute left-[12px]
+    top-[8px] flex items-center justify-center"
+            >
               <CiSearch className="text-2xl text-slate-700" />
               <span className="hidden md:block ml-2">Search...</span>
             </div>

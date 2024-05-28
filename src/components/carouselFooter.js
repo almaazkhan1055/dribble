@@ -182,9 +182,12 @@ const Sliders = () => {
           return (
             <div
               key={index}
-              className="relative inline-block h-[270px] w-[320px] mr-[20px] px-[16px] py-[20px]"
+              className="relative inline-block h-[200px] w-[200px] mr-[20px] px-[16px] py-[20px]"
             >
-              <Image className="rounded-2xl" src={e.imgSrc} />
+              <Image
+                className="rounded-2xl h-[200px] w-[200px]"
+                src={e.imgSrc}
+              />
               <div>
                 <p className="mt-[15px] font-semibold text-[#0d0c22]">
                   {e.jobrole}
