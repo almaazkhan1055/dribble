@@ -174,7 +174,7 @@ const Sliders = () => {
       <marquee
         width="100%"
         direction="left"
-        height="500px"
+        height="300px"
         behavior="scroll"
         scrollamount="10"
       >
